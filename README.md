@@ -40,6 +40,44 @@ crear_cuenta.prototype.retirar = function(cantidad){
 ```
 ![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/2212223.png)
 
+## #3 #3.1 #3.2 #3.3 #3.4
+Crear un metodo constructor llamado formulas. Construye los siguiente metodos para la clase:
+3.1 sumar(entero, entero) 3.2 fibonacci(cantidad) a partir de una entero sacar los numeros 3.3 operacion_modulo(cantidad) a partir de una cantidad mostrar cuales dan residuo 0 3.4 primos(cantidad) a partir de una cantidad mostrar cuales son numeros primos
+
+```javascript
+var formulas = {
+    sumar : function(valor_a, valor_b){
+        var suma = valor_a + valor_b;
+        return suma;
+    },
+    fibonacci : function(cantidad){
+        var a=0;
+        var b=1;
+        for(i=0; i<cantidad;i++){
+        var numeroTemporal=a;
+        a=b;
+        b=numeroTemporal+b;
+    }
+    return b;
+    },
+    operacion_modulo:function(cantidad){
+        for (let i = 2; i <= cantidad; i++) { 
+
+  for (let j = 2; j < i; j++) { 
+    if (i % j == 0) continue nextPrime; 
+  }
+
+  alert( i ); 
+}
+    }
+
+}
+```
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/331323334.png)
+
+
+
+
 
 
 
