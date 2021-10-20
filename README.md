@@ -169,6 +169,80 @@ var contrasennia = {
 ```
 ![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/5515253.png)
 
+## #6 #6.1 #6.2 #6.3 #6.4 #6.5
+Implementar un objeto que modele un contador. Un contador se puede incrementar o decrementar, recordando el valor actual. Al resetear un contador, se pone en cero.
+Además es posible indicar directamente cual es el valor actual. Este objeto debe entender los siguientes mensajes: 6.1 reset() 6.2 inc() 6.3 dec() 6.4 valorActual() 6.5 valorActual(nuevoValor) P.ej. si se evalúa la siguiente secuencia contador.valorActual(10) contador.inc() contador.inc() contador.dec() contador.inc() contador.valorActual() el resultado debe ser 12.
+
+```javascript
+var contador = {
+    incremento : 10,
+    decremento : 5,
+    memoria: 12,
+
+  reset : function() {
+    return (this.incremento*0);
+    this.memoria = 0;
+  },
+  inc : function() {
+     this.memoria = (this.memoria + this.incremento);
+     return this.memoria;
+  },
+  dec : function() {
+     this.memoria = (this.memoria - this.decremento);
+     return this.memoria;
+  },
+  valorActua : function() {
+    var valorAct = this.memoria;
+    return valorAct;
+  },
+  valorActual : function(nuevoValor) {
+    var valorActual = nuevoValor;
+    return valorActual 
+  }
+}
+```
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/66162636465.png)
+
+## #7
+Agregar al contador del ejercicio 6, la capacidad de recordar un String que representa el último comando que se le dio. Los Strings posibles son "reset", "incremento", "decremento" o "actualizacion" (para el caso de que se invoque valorActual con un parámetro). Para saber el último comando, se le envía al contador el mensaje ultimoComando().
+
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/7.png)
+
+## #8 #8.1 #8.2 #8.3
+mplementar un objeto que modele a Chimuela, una dragona de la que nos interesa saber qué energía tiene en cada momento, medida en joules. En el metodo constructor simpli�cado que nos piden implementar, las únicas acciones que vamos a contemplar son: cuando Chimuela come una cantidad de comida especi�cada en gramos, en este caso adquiere 4 joules por cada gramo, y cuando Chimuela vuela una cantidad de kilómetros, en este caso gasta un joule por cada kilómetro, más 10 joules de �costo �jo� de despegue y aterrizaje. La energía de Chimuela nace en 0. El objeto que implementa este metodo constructor de Chimuela, debe entender los siguientes mensajes: 8.1 comer(gramos) 8.2 volar(kilometros) 8.3 energia() P.ej. si sobre un REPL(Read-Eval-Print-Loop)(Lectura-Evaluación-Impresión) recién lanzado se evalúa la siguiente secuencia Chimuela.comer(100) Chimuela.volar(10) Chimuela.volar(20) Chimuela.energia() el resultado debe ser 350.
+
+```javascript
+var chimuela = {
+    energi : 0,
+    gramos : 0,
+    kilometros : 0,
+
+    comer : function(gramos) {
+        var conversion = (gramos*4);
+        energia = conversion + this.energi;
+        return energia;
+    },
+    volar : function(kilometros) {
+        energia = (energia - kilometros)-20;
+    },
+    chimuelaEnergia: function() {
+        return energia;
+    }
+}
+```
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/8818283.png)
+
+## #9
+Agregar al metodo constructor de Chimuela del ejercicio 8, la capacidad de entender estos mensajes: estaDebil(), Chimuela está débil si su energía es menos de 50. estaFeliz(), Chimuela está feliz si su energía está entre 500 y 1000. cuantoQuiereVolar(), que es el resultado de la siguiente cuenta. De base, quiere volar (energía / 5) kilómetros, p.ej., si tiene 120 de energía, quiere volar 24 kilómetros. Si la energía está entre 300 y 400, entonces hay que sumar 10 a este valor, y si es múltiplo de 20, otros 15. Entonces, si Chimuela tiene 340 de energía, quiere volar 68 + 10 + 15 = 93 kilómetros. Para probar esto, sobre un REPL recién lanzado darle de comer 85 a Chimuela, así la energía queda en
+
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/9.png)
+
+
+
+
+
+
+
 
 
 
