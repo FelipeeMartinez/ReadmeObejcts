@@ -237,6 +237,20 @@ Agregar al metodo constructor de Chimuela del ejercicio 8, la capacidad de enten
 
 ![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/9.png)
 
+## #10 #10.1 #10.2 #10.3 #10.4 #10.5
+Implementar un objeto que represente una calculadora sencilla, que permita sumar, restar y multiplicar. Este objeto debe entender los siguientes mensajes: 10.1 cargar(numero) 10.2 sumar(numero) 10.3 restar(numero) 10.4 multiplicar(numero) 10.5 valorActual() P.ej. si se evalúa la siguiente secuencia calculadora.cargar(0) calculadora.sumar(4) calculadora.multiplicar(5) calculadora.restar(8) calculadora.multiplicar(2) calculadora.valorActual() el resultado debe ser 24.
+
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/10101102103104105.png)
+
+## #11 
+Crear un metodo constructor llamado Libro. Sus atributos título del libro, autor, número de ejemplares del libro y número de ejemplares prestados los siguiente metodos para la clase:
+préstamo() que incremente el atributo correspondiente cada vez que se realice un préstamo del libro. No se podrán prestar libros de los que no queden ejemplares disponibles para prestar. Devuelve true si se ha podido realizar la operación y false en caso contrario. devolucion() que decremente el atributo correspondiente cuando se produzca la devolución de un libro. No se podrán devolver libros que no se hayan prestado. Devuelve true si se ha podido realizar la operación y false en caso contrario. toString() para mostrar los datos de los libros.
+
+![li](https://github.com/FelipeeMartinez/ReadmeObejcts/blob/master/Imagenes/11.png)
+
+
+
+
 
 
 
